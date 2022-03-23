@@ -1,0 +1,150 @@
+*{ box-sizing: border-box;}
+    
+  header { font-family: cursive;
+    background-color:grey;
+    text-align: center;
+    border-radius: 10px;
+    margin:10px ;
+    background:white url(/images/flowers-background-pink-roses-petals-hd-wallpaper-preview.jpg);
+    box-shadow:2px 2px 0px #666666;
+    background-size: cover;
+    position: relative;
+    
+  }
+  #header:before {
+    content: "";
+    background: rgba(255, 255, 255, 0.568);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+    .cubes {
+        height: 200px;
+        background:lightcoral;
+        box-shadow: 2px 2px 0px #666666;  
+      }  
+
+    #navbar-brand{
+        background: lightcoral;   
+    }
+
+      /*--------------------------------------------------------------
+  # Contact
+  --------------------------------------------------------------*/
+  .contact .info {
+    width: 100%;
+    background: #fff;
+  }
+  .contact .info i {
+    font-size: 20px;
+    color: lightcoral;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #eef7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+  .contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #45505b;
+  }
+  .contact .info p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #728394;
+  }
+ 
+  .contact form button[type=submit] {
+    background: lightcoral;
+    border: 0;
+    padding: 10px 35px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+  }
+  .contact form button[type=submit]:hover {
+    background: lightcoral;
+  }
+  @-webkit-keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Footer
+  --------------------------------------------------------------*/
+  #footer {
+    background: #f7f8f9;
+    color: #45505b;
+    font-size: 14px;
+    text-align: center;
+    padding: 30px 0;
+  }
+  #footer h3 {
+    font-size: 36px;
+    font-weight: 700;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0 0 15px 0;
+  }
+  #footer p {
+    font-size: 15;
+    font-style: italic;
+    padding: 0;
+    margin: 0 0 40px 0;
+  }
+  #footer .social-links {
+    margin: 0 0 40px 0;
+  }
+  #footer .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: lightcoral;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+  #footer .social-links a:hover {
+    background: lightpink;
+    color: #fff;
+    text-decoration: none;
+  }
+  #footer .copyright {
+    margin: 0 0 5px 0;
+  }
+  #footer .credits {
+    font-size: 13px;
+  }
+  .jumbotron{
+    background-color: transparent;
+  }
