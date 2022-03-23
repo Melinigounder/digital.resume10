@@ -1,5 +1,19 @@
 *{ box-sizing: border-box;}
-    
+/*--------------------------------------------------------------
+  # body
+  --------------------------------------------------------------*/
+body{
+  font-family: cursive;
+  font-size:100%;
+  background-color: #FCF7F8;
+  margin: 10px;
+  border-color: lightcoral;
+  border-style: solid;
+  display: grid;
+} 
+ /*--------------------------------------------------------------
+  # header
+  --------------------------------------------------------------*/
   header { font-family: cursive;
     background-color:grey;
     text-align: center;
@@ -11,21 +25,87 @@
     position: relative;
     
   }
-  #header:before {
-    content: "";
-    background: rgba(255, 255, 255, 0.568);
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
 
+  /*--------------------------------------------------------------
+  # Resume
+  --------------------------------------------------------------*/
+  
+  .resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid lightcoral;
+    position: relative;
+    text-align: start;
+  }
+  .resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: lightcoral;
+    margin-bottom: 10px;
+  
+  }
+  a:-webkit-any-link {
+    text-decoration: underline;
+  }
+  .resume .resume-item h5 {
+    font-size: 16px;
+    background: #f7f8f9;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .resume .resume-item ul {
+    padding-left: 20px;
+  }
+  .resume .resume-item ul li {
+    padding-bottom: 10px;
+  }
+  .resume .resume-item:last-child {
+    padding-bottom: 0;
+  }
+  .resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid lightcoral;
+  
+  }
+/*--------------------------------------------------------------
+  #portfolio
+  --------------------------------------------------------------*/
+  .portfolio{
+    text-align: center;
+  }
+  /*--------------------------------------------------------------
+  # Cubes
+  --------------------------------------------------------------*/
     .cubes {
         height: 200px;
         background:lightcoral;
-        box-shadow: 2px 2px 0px #666666;  
+        box-shadow: 2px 2px 0px #666666; 
+        text-align: start; 
+        padding: 5px;
+        margin:10px ;
+        border-radius: 10px;
       }  
+      .rounded-circle{
+        height: 160px;
+        width: 160%;
+        border-color: lightcoral;
+        border-radius: 100%;
+        border-style: solid;
+        image-resolution: 100%;
+        transform: translateX(-2em);
+        }
 
     #navbar-brand{
         background: lightcoral;   
@@ -36,7 +116,6 @@
   --------------------------------------------------------------*/
   .contact .info {
     width: 100%;
-    background: #fff;
   }
   .contact .info i {
     font-size: 20px;
@@ -102,6 +181,7 @@
     font-size: 14px;
     text-align: center;
     padding: 30px 0;
+    
   }
   #footer h3 {
     font-size: 36px;
@@ -110,15 +190,18 @@
     font-family: "Poppins", sans-serif;
     padding: 0;
     margin: 0 0 15px 0;
+    
   }
   #footer p {
     font-size: 15;
     font-style: italic;
     padding: 0;
     margin: 0 0 40px 0;
+    
   }
   #footer .social-links {
     margin: 0 0 40px 0;
+  
   }
   #footer .social-links a {
     font-size: 18px;
@@ -148,3 +231,18 @@
   .jumbotron{
     background-color: transparent;
   }
+/*--------------------------------------------------------------
+  # zoom
+  --------------------------------------------------------------*/
+  .zoom {
+    padding: 50px;
+    transition: transform .2s;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+  .zoom :hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);}
