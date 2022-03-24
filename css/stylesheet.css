@@ -6,7 +6,7 @@
 body{
   font-family: cursive;
   font-size:100%;
-  background-color: #FCF7F8;
+  background-color: #fcf7f8;
   margin: 10px;
   border-color: lightcoral;
   border-style: solid;
@@ -17,17 +17,24 @@ body{
   # header
   --------------------------------------------------------------*/
   header { font-family: cursive;
-    background-color:grey;
+    background-color:rgb(128, 128, 128);
     text-align: center;
     border-radius: 10px;
     margin:10px ;
-    background:white url(/images/flowers-background-pink-roses-petals-hd-wallpaper-preview.jpg);
+    background:white url(https://9xwallpapers.com/wp-content/uploads/2021/09/Pink-Backgrounds.jpg);
     box-shadow:2px 2px 0px #666666;
     background-size: cover;
     position: relative;
-    
   }
 
+@media (max-width: 992px) {
+    #header {
+      width: 300px;
+      background:rgb(230, 224, 224);
+      border-right: 1px solid#e6e9ec ;
+      left: -300px;
+    }
+  }
   /*--------------------------------------------------------------
   # zoom
   --------------------------------------------------------------*/
@@ -64,36 +71,13 @@ body{
     position: relative;
     text-align: start;
     background-color: lightpink;
+    border-top: 2px solid lightcoral;
+    border-bottom: 2px solid lightcoral;
+    border-radius: 10px;
+    box-shadow:2px 2px 0px #45505b;
+
   }
 
-  .resume .resume-item h4 {
-    line-height: 18px;
-    font-size: 18px;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-decoration: underline;
-    font-family: "Poppins", sans-serif;
-    color: lightcoral;
-    margin-bottom: 10px;
-    padding: 5px;
-  }
-
-  .resume .resume-item h5 {
-    font-size: 16px;
-    padding: 5px 15px;
-    display: inline-block;
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
-  .resume .resume-item ul {
-    padding-left: 20px;
-  }
-  .resume .resume-item ul li {
-    padding-bottom: 10px;
-  }
-  .resume .resume-item:last-child {
-    padding-bottom: 0;
-  }
   .resume .resume-item::before {
     content: "";
     position: absolute;
@@ -101,10 +85,12 @@ body{
     height: 16px;
     border-radius: 50px;
     left: -9px;
+    padding: 10px;
     
-    background: #fff;
-    border: 2px solid lightcoral;
-  
+   
+    
+    
+
   }
 
   a:-webkit-any-link {
@@ -141,40 +127,11 @@ body{
         transform: translateX(-2em);
         }
 
-      /*--------------------------------------------------------------
+  /*--------------------------------------------------------------
   # Contact
   --------------------------------------------------------------*/
-  .contact .info {
-    width: 100%;
-  }
-  .contact .info i {
-    font-size: 20px;
-    color: lightcoral;
-    float: left;
-    width: 44px;
-    height: 44px;
-    background: #eef7ff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    transition: all 0.3s ease-in-out;
-  }
-  .contact .info h4 {
-    padding: 0 0 0 60px;
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 5px;
-    color: #45505b;
-  }
-  .contact .info p {
-    padding: 0 0 0 60px;
-    margin-bottom: 0;
-    font-size: 14px;
-    color: #728394;
-  }
  
-  .contact form button[type=submit] {
+  .form-group [type=submit] {
     background: lightcoral;
     border: 0;
     padding: 10px 35px;
@@ -182,9 +139,7 @@ body{
     transition: 0.4s;
     border-radius: 50px;
   }
-  .contact form button[type=submit]:hover {
-    background: lightcoral;
-  }
+  
   @-webkit-keyframes animate-loading {
     0% {
       transform: rotate(0deg);
@@ -262,5 +217,37 @@ body{
     background-color: transparent;
   }
 
+  /*--------------------------------------------------------------
+  # Grid
+  --------------------------------------------------------------*/
+  #grid { 
+    display: grid;
+    text-align: center;
+    }
+/*--------------------------------------------------------------
+  # Media Queries
+  --------------------------------------------------------------*/
+    /*code for mobile devices smaller than 600px*/
+body { background-color:white; }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+   body { background-color: white; }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+   body { background-color: white; }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+   body { background-color: white; }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+   body { background-color:white; }
+}
 
    
