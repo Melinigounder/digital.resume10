@@ -16,37 +16,40 @@
    <!-- font-awesome -->
    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-<body>
- <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+
+<!-- ======= Navbar ======= -->
+<nav class="navbar navbar-expand-md navbar-light fixed-top">
   <a class="navbar-brand" href="#"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
   </button>
-
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
       <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-              <a class="nav-link" href="home">Home <span class="sr-only">(current)</span></a>
+            <a href="#resume" class="nav-link scrollto active"><i class="fa-solid fa-file"></i> <span>Resume</span></a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="about">About</a>
+            <a href="#portfolio" class="nav-link scrollto active"><i class="fa-solid fa-book"></i>
+              <span>Portfolio</span></a>
           </li>
           <li class="nav-item">
-              <a class="nav-link " href="https://www.codespace.co.za/" tabindex="-1" aria-disabled="true" target="codespace">link</a>
+            <a href="#contact" class="nav-link scrollto active"><i class="fa-solid fa-envelope"></i>
+          <span>Contact</span></a></li>  
           </li>
-          <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-              <div class="dropdown-menu" aria-labelledby="dropdown01">
-                  <a class="dropdown-item" href="#academic qualification">Academic Qualification</a>
-                  <a class="dropdown-item" href="#employment history">Employment History</a>
-                  <a class="dropdown-item" href="#contact information">Contact Information</a>
+          <li class="nav-item Social Media">
+              <a class="nav-link dropdown-toggle" href="Social Media" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Social Media</a>
+              <div class="dropdown-menu" aria-labelledby="Social Media">
+                  <a class="dropdown-item" href="https://www.linkedin.com/in/melini-gounder-87b17b3a/"target="_linkedin">LinkedIn</a>
+                  <a class="dropdown-item" href="https://www.facebook.com/melini.gounder.37"target="_facebook">Facebook</a>
+                  <a class="dropdown-item" href="https://www.instagram.com/melinigounder/" target="-instagram">Instagram</a>
               </div>
           </li>
-      </ul>
-     
+      </ul> 
 </nav>
-  
-      
+
+
+<body>
+<!-- ======= About ======= -->
 <div class="jumbotron text-center" style="margin-bottom:0">
     <header>
       <div class="container">
@@ -66,38 +69,11 @@
 </div>
 </header>
 
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="#"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-  </button>
 
-  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-      <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-              <a class="nav-link" href="home">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="about">About</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link " href="https://www.codespace.co.za/" tabindex="-1" aria-disabled="true" target="codespace">link</a>
-          </li>
-          <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-              <div class="dropdown-menu" aria-labelledby="dropdown01">
-                  <a class="dropdown-item" href="#academic qualification">Academic Qualification</a>
-                  <a class="dropdown-item" href="#employment history">Employment History</a>
-                  <a class="dropdown-item" href="#contact information">Contact Information</a>
-              </div>
-          </li>
-      </ul>
-     
-</nav>
-
-
-<!-- ======= Resume Section ======= -->
+<!-- ======= Resume ======= -->
 <section id="resume" class="resume">
+  <h2>Resume</h2>
+ <p> Faith Moves Mountains</p>
   <div class="container">
 
     
@@ -123,8 +99,7 @@
           <h5>2017 - 2017</h5>
           <p><em>Unisa, SA</em></p>
           <p>Completed with Distinction</p>
-
-
+          
         </div>
         <div class="resume-item">
           <h4>Certificate &amp; Software Development</h4>
@@ -134,6 +109,8 @@
           <a href="https://www.codespace.co.za/" target="codespace">www.codespace.com</a>
         </div>
       </div>
+      
+
       <div class="col-lg-6">
         <h3 class="resume-title">Professional Experience</h3>
         <div class="resume-item">
@@ -161,11 +138,11 @@
 
   </div>
 </section>
+<br>
+<br>
 
-
-
- <!-- ======= Portfolio Section ======= -->
- <section id="portfolio" class="portfolio section-bg">
+ <!-- ======= Portfolio ======= -->
+ <section id="portfolio">
     <div class="container">
 
       <div class="section-title">
@@ -173,7 +150,7 @@
         <p> Every memory has a smile.</p>
       </div>
 
-      <div id="carouselExampleIndicators" class="carousel slide bg-dark" data-ride="carousel">
+      <div id="carousel" class="carousel slide bg-dark" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
@@ -185,20 +162,18 @@
               src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGhvdG9ncmFwaHl8ZW58MHx8MHx8&w=1000&q="
               class="d-block w-100" alt="Camera">
           </div>
-          <div class="carousel-item active">
-
-          </div>
+          
           <div class="carousel-item active">
             <img
               src="https://s.studiobinder.com/wp-content/uploads/2021/02/Creative-Photography-Ideas-Techniques-To-Get-You-Inspired-StudioBinder.jpeg"
               class="d-block w-100" alt="nature">
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="camera" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <a class="carousel-control-next" href="nature" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
@@ -208,9 +183,9 @@
   <br>
   <br>
 
-  <!-- ======= Contact Section ======= -->
+  <!-- ======= Contact ======= -->
   <section id="contact" class="contact">
-    <div class="container aos-init" data-aos="fade-up">
+    <div class="container" >
 
       <div class="section-title">
         <h2>Contact</h2>

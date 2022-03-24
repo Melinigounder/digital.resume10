@@ -1,4 +1,5 @@
 *{ box-sizing: border-box;}
+
 /*--------------------------------------------------------------
   # body
   --------------------------------------------------------------*/
@@ -11,6 +12,7 @@ body{
   border-style: solid;
   display: grid;
 } 
+
  /*--------------------------------------------------------------
   # header
   --------------------------------------------------------------*/
@@ -27,6 +29,30 @@ body{
   }
 
   /*--------------------------------------------------------------
+  # zoom
+  --------------------------------------------------------------*/
+  .zoom {
+    padding: 50px;
+    transition: transform .2s;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+  .zoom :hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);}
+
+   /*--------------------------------------------------------------
+  # Navigation Menu
+  --------------------------------------------------------------*/
+  
+  .navbar{
+    background-color: lightpink;
+  }
+
+  /*--------------------------------------------------------------
   # Resume
   --------------------------------------------------------------*/
   
@@ -34,25 +60,26 @@ body{
     padding: 0 0 20px 20px;
     margin-top: -2px;
     border-left: 2px solid lightcoral;
+    border-right:2px solid lightcoral ;
     position: relative;
     text-align: start;
+    background-color: lightpink;
   }
+
   .resume .resume-item h4 {
     line-height: 18px;
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
+    text-decoration: underline;
     font-family: "Poppins", sans-serif;
     color: lightcoral;
     margin-bottom: 10px;
-  
+    padding: 5px;
   }
-  a:-webkit-any-link {
-    text-decoration: underline;
-  }
+
   .resume .resume-item h5 {
     font-size: 16px;
-    background: #f7f8f9;
     padding: 5px 15px;
     display: inline-block;
     font-weight: 600;
@@ -74,17 +101,24 @@ body{
     height: 16px;
     border-radius: 50px;
     left: -9px;
-    top: 0;
+    
     background: #fff;
     border: 2px solid lightcoral;
   
   }
+
+  a:-webkit-any-link {
+    text-decoration: underline;
+    color: lightcoral;
+  }
+
 /*--------------------------------------------------------------
   #portfolio
   --------------------------------------------------------------*/
   .portfolio{
     text-align: center;
   }
+  
   /*--------------------------------------------------------------
   # Cubes
   --------------------------------------------------------------*/
@@ -106,10 +140,6 @@ body{
         image-resolution: 100%;
         transform: translateX(-2em);
         }
-
-    #navbar-brand{
-        background: lightcoral;   
-    }
 
       /*--------------------------------------------------------------
   # Contact
@@ -231,18 +261,6 @@ body{
   .jumbotron{
     background-color: transparent;
   }
-/*--------------------------------------------------------------
-  # zoom
-  --------------------------------------------------------------*/
-  .zoom {
-    padding: 50px;
-    transition: transform .2s;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-  }
-  
-  .zoom :hover {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5);}
+
+
+   
